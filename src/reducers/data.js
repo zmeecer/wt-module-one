@@ -2,6 +2,7 @@ import {
   GET_DATA_PENDING,
   GET_DATA_SUCCESS,
   GET_DATA_FAIL,
+  CREATE_DATA,
 } from '../actions';
 
 export const initialState = {
@@ -29,6 +30,11 @@ export default function companies(state = initialState, action) {
         ...state,
         loading: false,
         error: action.payload,
+      };
+    case CREATE_DATA:
+      return {
+        ...state,
+        items: [...state.items, action.payload],
       };
     default:
       return state;
