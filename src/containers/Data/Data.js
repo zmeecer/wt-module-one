@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import LinearProgress from 'material-ui/LinearProgress';
 
 class Data extends Component {
   componentDidMount() {
@@ -12,7 +13,7 @@ class Data extends Component {
       <div>
         <h1>Data</h1>
         {loading &&
-          <h2>loading...</h2>
+          <LinearProgress mode="indeterminate"/>
         }
         {error &&
           <h2>Error: {error}</h2>
