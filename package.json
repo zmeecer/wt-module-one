@@ -11,7 +11,8 @@
     "react-router-dom": "^4.0.0",
     "react-tap-event-plugin": "^2.0.1",
     "redux": "^3.6.0",
-    "redux-saga": "^0.14.3"
+    "redux-saga": "^0.14.3",
+    "wt-frame": "https://github.com/zmeecer/react-webpack-boilerplate.git#feature/component-app"
   },
   "devDependencies": {
     "react-scripts": "0.9.5"

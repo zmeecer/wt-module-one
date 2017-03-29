@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
+import Actions from '../Actions';
 
 class Home extends Component {
   render() {
     return (
-      <h1>Home</h1>
+      <div>
+        <h1>Home</h1>
+        <Actions />
+      </div>
     );
   }
 }
